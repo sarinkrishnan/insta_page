@@ -127,8 +127,9 @@ class _HomePageState extends State<HomePage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
+                      if(data!=null)
                       ClipRRect(borderRadius: BorderRadius.circular(42.r),
-                        child: Image.network(
+                        child:  Image.network(
                           data!.media!.first.profilePic.toString(),
                           
                          
